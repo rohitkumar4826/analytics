@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Analytics and Search</title>
+    <link rel="shortcut icon" href="data-analytics.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Analytics and Search</h1>
+        <button id="getStatsButton">Get Blog Statistics</button>
+        <div id="statistics">
+            <h2>Statistics</h2>
+            <table>
+                <tr>
+                    <th>Total Blogs</th>
+                    <td><span id="totalBlogs"></span></td>
+                </tr>
+                <tr>
+                    <th>Longest Blog Title</th>
+                    <td><span id="longestTitle"></span></td>
+                </tr>
+                <tr>
+                    <th>Blogs with "Privacy" in Title</th>
+                    <td><span id="privacyCount"></span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="search">
+            <h2>Search Blogs</h2>
+            <input type="text" id="searchQuery" placeholder="Enter search query">
+            <button id="searchButton">Search</button>
+            <div id="searchResults" class="card-container"></div> <!-- Use a container div for cards -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
